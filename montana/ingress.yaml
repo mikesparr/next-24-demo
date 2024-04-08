@@ -1,0 +1,17 @@
+---
+# ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: website-ingress
+  namespace: montana
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: next-demo-static-ip
+    ingress.gcp.kubernetes.io/pre-shared-cert: next24-msparr-com
+    ingressClassName: "gce"
+spec:
+  defaultBackend:
+    service:
+      name: website
+      port:
+        number: 80
