@@ -1,0 +1,8 @@
+---
+# namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: griz
+  labels:
+    shared-gateway-access: "true"
