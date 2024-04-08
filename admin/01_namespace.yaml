@@ -1,0 +1,8 @@
+---
+# namespace-admin.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: admin
+  labels:
+    shared-gateway-access: "true"
