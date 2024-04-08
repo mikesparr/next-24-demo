@@ -3,6 +3,12 @@
 This repo includes example code and YAML manifests for my Cloud Next '24 talk in 
 Las Vegas, Nevada, USA on April 9, 2024.
 
+In this demo, we explore limitations of Ingress (namespace-bound, etc.) and how to 
+solve a common scenario using `Gateway` and `HTTPRoute` resources.
+
+# Preview
+![Montana - Big Sky Country](screenshot-next24-website.png "Montana - Big Sky Country")
+
 # Architecture
 TODO
 
