@@ -1,0 +1,14 @@
+---
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: website-cats
+  namespace: cats
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Website Cats</title></head>
+    <body><h1>Website Cats</h1></body>
+    </html>

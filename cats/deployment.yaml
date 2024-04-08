@@ -1,0 +1,29 @@
+---
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website
+  namespace: cats
+spec:
+  selector:
+    matchLabels:
+      app: website
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: website
+    spec:
+      containers:
+      - name: website
+        image: nginx
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: website-index
+          mountPath: /usr/share/nginx/html/
+      volumes:
+        - name: website-index
+          configMap:
+            name: website-cats

@@ -1,0 +1,8 @@
+---
+# namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cats
+  labels:
+    shared-gateway-access: "true"
