@@ -1,0 +1,35 @@
+---
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: website-mt
+  namespace: montana
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Montana - Big Sky Country</title>
+    <style>
+        body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        }
+        img {
+        max-width: 100%;
+        height: auto;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Welcome to Montana</h1>
+    <h2>Big Sky Country</h2>
+    <img src="https://www.onlyinyourstate.com/wp-content/uploads/2016/01/Wild-Goose-Island-Glacier-National-Park-Montana-6779913454.jpg?w=720" alt="Scenic Montana Mountains">
+    <p>Discover the beauty of Montana's vast landscapes and majestic mountains.</p>
+    <h2>Choose your school:</h2>
+    <p><a href="/cats">Montana State University Bobcats</a> &nbsp;&nbsp; <a href="/griz">The University of Montana Grizzlies</a></p>
+    </body>
+    </html>
