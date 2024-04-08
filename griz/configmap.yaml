@@ -1,0 +1,16 @@
+---
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: website-griz
+  namespace: griz
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Website Griz</title></head>
+    <body><h1>Website Griz</h1></body>
+    </html>
+
+
